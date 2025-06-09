@@ -257,16 +257,26 @@ span {
     85%{
         width: calc(100% + 8px);
     }
+
+}
+/* Default desktop styles */
+.container {
+  width: 800px;
+  margin: auto;
+}
+
+/* For mobile screens */
 @media (max-width: 600px) {
-  body {
+  .container {
+    width: 90%;
     padding: 10px;
-    font-size: 16px;
   }
 
-  .container {
-    width: 90% !important;
-    margin: auto;
+  nav {
+    font-size: 14px;
   }
+
+  /* Adjust font sizes, hide/show elements, stack layout vertically */
 }
     
 }
