@@ -52,42 +52,59 @@
   <section class="projects" id="projects">
     <h2>My Projects</h2>
 
-    <!-- Filter Menu -->
     <div class="project-card" data-category="telegram">
-  <img src="https://source.unsplash.com/400x250/?telegram,chat" alt="Telegram Bot Project" />
-  <h3>Telegram Bot Automation</h3>
-  <div class="tech-stack">
-    <span>Python</span>
-    <span>Telegram API</span>
-    <span>CSS</span>
-  </div>
-  <p>A bot that automatically copies and reposts content across Telegram channels with custom styling.</p>
-  <a href="https://github.com/yourusername/telegram-bot" class="btn">View Project</a>
-</div>
+      <img src="https://source.unsplash.com/400x250/?telegram,chat" alt="Telegram Bot Project" />
+      <h3>Telegram Bot Automation</h3>
+      <div class="tech-stack">
+        <span>Python</span>
+        <span>Telegram API</span>
+        <span>CSS</span>
+      </div>
+      <p>A bot that automatically copies and reposts content across Telegram channels with custom styling.</p>
+      <a href="https://github.com/yourusername/telegram-bot" class="btn">View Project</a>
+    </div>
 
-<div class="project-card" data-category="crypto">
-  <img src="https://source.unsplash.com/400x250/?crypto,bitcoin" alt="Crypto Trading Bot" />
-  <h3>Crypto Trading Bot</h3>
-  <div class="tech-stack">
-    <span>JavaScript</span>
-    <span>Node.js</span>
-    <span>API</span>
-  </div>
-  <p>An automated bot that trades meme coins based on live market signals.</p>
-  <a href="#" class="btn">View Project</a>
-</div>
+    <div class="project-card" data-category="crypto">
+      <img src="https://source.unsplash.com/400x250/?crypto,bitcoin" alt="Crypto Trading Bot" />
+      <h3>Crypto Trading Bot</h3>
+      <div class="tech-stack">
+        <span>JavaScript</span>
+        <span>Node.js</span>
+        <span>API</span>
+      </div>
+      <p>An automated bot that trades meme coins based on live market signals.</p>
+      <a href="#" class="btn">View Project</a>
+    </div>
 
-<div class="project-card" data-category="web">
-  <img src="https://source.unsplash.com/400x250/?web,design" alt="Web Development Project" />
-  <h3>Portfolio Website</h3>
-  <div class="tech-stack">
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>JavaScript</span>
-  </div>
-  <p>My personal portfolio site showcasing my skills and projects.</p>
-  <a href="https://dellportfilol.netlify.app/" class="btn">View Project</a>
-</div>
+    <div class="project-card" data-category="web">
+      <img src="https://source.unsplash.com/400x250/?web,design" alt="Web Development Project" />
+      <h3>Portfolio Website</h3>
+      <div class="tech-stack">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+      </div>
+      <p>My personal portfolio site showcasing my skills and projects.</p>
+      <a href="https://dellportfilol.netlify.app/" class="btn">View Project</a>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form action="mailto:your.email@example.com" method="POST" enctype="text/plain" class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="Name" placeholder="Your name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="Email" placeholder="Your email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="Message" rows="5" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
+
   <script>
     const filterButtons = document.querySelectorAll('.filter-menu button');
     const projects = document.querySelectorAll('.project-card');
