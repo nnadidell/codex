@@ -257,6 +257,16 @@ span {
     85%{
         width: calc(100% + 8px);
     }
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+    font-size: 16px;
+  }
 
+  .container {
+    width: 90% !important;
+    margin: auto;
+  }
+}
     
 }
