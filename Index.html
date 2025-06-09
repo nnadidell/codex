@@ -1,57 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <title>Dell Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>CodeX Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <a href="#home" class="logo">CodeX <span></span></a>
-    <nav class="navbar">
-      <a href="#home">Home</a>
-      <a href="#about">About Me</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    <header class="header">
+        <a href="#home" class="logo">CodeX <span></span></a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about me</a>
+            <a href="#projects">projects</a>
+            <a href="#contact">contact</a>
+        </nav>
+    </header>
 
-  <section class="home" id="home">
-    <div class="home-content">
-      <h1>Hello, I am <span>Dell</span></h1>
-      <h3 class="text-animation">I'm a <span></span></h3>
-      <p>I'm a web developer with over a year of experience. I specialize in creating modern websites, frontend design, and bot development.</p>
-      <div class="social-icons">
-        <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-        <a href="https://www.instagram.com/code.x146"><i class='bx bxl-instagram-alt'></i></a>
-        <a href="https://wa.me/message/2FU7HMU2TCEJM1"><i class='bx bxl-whatsapp'></i></a>
-        <a href="#"><i class='bx bxl-github'></i></a>
-      </div>
-      <div class="btn-group">
-        <a href="#contact" class="btn">Contact Me</a>
-      </div>
-    </div>
-    <div class="home-img">
-      <img src="IMG_2161.jpg" alt="Dell profile image">
-    </div>
-  </section>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hello, I am <span>Dell</span></h1>
+            <h3 class="text-animation">I'm a <span></span></h3>
+            <p>I'm a web developer with over a year of experience. My expertise includes creating and designing websites, frontend design, backend, and more.</p>
+            <div class="social-icons">
+                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="https://www.instagram.com/code.x146"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://wa.me/message/2FU7HMU2TCEJM1"><i class='bx bxl-whatsapp'></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+            </div>
+            <div class="btn-group">
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="IMG_2161.jpg" alt="only one Dell">
+        </div>
+    </section>
 
-  <section class="projects" id="projects">
-    <h2 style="font-size: 3rem; margin-bottom: 2rem;">🚀 Telegram Bot Projects</h2>
-    <ul style="font-size: 1.8rem; line-height: 1.8;">
-      <li><strong>Copy & Post Bot:</strong> Automatically copies posts from one channel and republishes to three others (not as forwarded).</li>
-      <li><strong>Crypto Alert Bot:</strong> Monitors crypto wallets and sends balance alerts and summaries to Telegram.</li>
-      <li><strong>Engagement Booster Bot:</strong> Designed to help boost visibility and interaction across Telegram channels.</li>
-    </ul>
-  </section>
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="project-list">
+            <div class="project">
+                <h3>Telegram Channel Auto Poster Bot</h3>
+                <p>This bot automatically reposts messages from one Telegram channel to 3 others without forwarding tag. Built with Python and Telegram Bot API.</p>
+            </div>
+            <div class="project">
+                <h3>Crypto Price Tracker Bot</h3>
+                <p>A Telegram bot that tracks real-time prices of cryptocurrencies like BTC, ETH, SOL. Alerts users when price hits their target.</p>
+            </div>
+        </div>
+    </section>
 
-  <section class="contact" id="contact" style="margin-top: 5rem;">
-    <h2 style="font-size: 2.5rem;">📬 Contact</h2>
-    <p style="font-size: 1.6rem;">Email: <a href="mailto:nnadicollins@icloud.com" style="color: var(--main-color);">nnadicollins@icloud.com</a></p>
-  </section>
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <p>Email: <a href="mailto:nnadicollins@icloud.com">nnadicollins@icloud.com</a></p>
+    </section>
 
-  <script src="jave.js"></script>
+    <script src="jave.js"></script>
 </body>
 </html>
