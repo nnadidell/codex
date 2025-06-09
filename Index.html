@@ -1,64 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>CodeX Portfolio</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <title>Dell's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header class="header">
-        <a href="#home" class="logo">CodeX <span></span></a>
-        <nav class="navbar">
-            <a href="#home">home</a>
-            <a href="#about">about me</a>
-            <a href="#projects">projects</a>
-            <a href="#contact">contact</a>
-        </nav>
-    </header>
+  <header class="header">
+    <a href="#home" class="logo">CodeX <span></span></a>
+    <nav class="navbar">
+      <a href="#home">home</a>
+      <a href="#about">about me</a>
+      <a href="#projects">projects</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </header>
 
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1>Hello, I am <span>Dell</span></h1>
-            <h3 class="text-animation">I'm a <span></span></h3>
-            <p>I'm a web developer with over a year of experience. My expertise includes creating and designing websites, frontend design, backend, and more.</p>
-            <div class="social-icons">
-                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-                <a href="https://www.instagram.com/code.x146"><i class='bx bxl-instagram-alt'></i></a>
-                <a href="https://wa.me/message/2FU7HMU2TCEJM1"><i class='bx bxl-whatsapp'></i></a>
-                <a href="#"><i class='bx bxl-github'></i></a>
-            </div>
-            <div class="btn-group">
-                <a href="#contact" class="btn">Contact</a>
-            </div>
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>Hello, I am <span>Dell</span></h1>
+      <h3 class="text-animation">I'm a <span></span></h3>
+      <p>
+        I'm a web developer with extensive experience over a year.
+        Expertise in creating and designing websites, frontend design, and many more...
+      </p>
+      <div class="social-icons">
+        <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+        <a href="https://www.instagram.com/code.x146"><i class="bx bxl-instagram-alt"></i></a>
+        <a href="https://wa.me/message/2FU7HMU2TCEJM1"><i class="bx bxl-whatsapp"></i></a>
+        <a href="#"><i class="bx bxl-github"></i></a>
+      </div>
+      <div class="btn-group">
+        <a href="#contact" class="btn">Contact</a>
+      </div>
+    </div>
+    <div class="home-img">
+      <img src="IMG_2161.jpg" alt="Dell" />
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+      I am passionate about technology and love building bots and web apps.
+      Skilled in Python, JavaScript, Telegram API, and blockchain technologies.
+    </p>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>My Projects</h2>
+
+    <!-- Filter Menu -->
+    <div class="filter-menu">
+      <button class="active" data-filter="all">All</button>
+      <button data-filter="telegram">Telegram Bots</button>
+      <button data-filter="crypto">Crypto Bots</button>
+      <button data-filter="web">Web Development</button>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="project-grid">
+      <div class="project-card" data-category="telegram">
+        <img src="telegram-bot.jpg" alt="Telegram Bot Project" />
+        <h3>Telegram Bot Automation</h3>
+        <div class="tech-stack">
+          <span>Python</span>
+          <span>Telegram API</span>
+          <span>CSS</span>
         </div>
-        <div class="home-img">
-            <img src="IMG_2161.jpg" alt="only one Dell">
+        <p>A bot that automatically copies and reposts content across Telegram channels with custom styling.</p>
+        <a href="https://github.com/yourusername/telegram-bot" class="btn">View Project</a>
+      </div>
+
+      <div class="project-card" data-category="crypto">
+        <img src="crypto-bot.jpg" alt="Crypto Trading Bot" />
+        <h3>Crypto Trading Bot</h3>
+        <div class="tech-stack">
+          <span>JavaScript</span>
+          <span>Node.js</span>
+          <span>API</span>
         </div>
-    </section>
+        <p>An automated bot that trades meme coins based on live market signals.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
 
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <h2 class="section-title">My Projects</h2>
-        <div class="project-list">
-            <div class="project">
-                <h3>Telegram Channel Auto Poster Bot</h3>
-                <p>This bot automatically reposts messages from one Telegram channel to 3 others without forwarding tag. Built with Python and Telegram Bot API.</p>
-            </div>
-            <div class="project">
-                <h3>Crypto Price Tracker Bot</h3>
-                <p>A Telegram bot that tracks real-time prices of cryptocurrencies like BTC, ETH, SOL. Alerts users when price hits their target.</p>
-            </div>
+      <div class="project-card" data-category="web">
+        <img src="web-dev.jpg" alt="Web Development Project" />
+        <h3>Portfolio Website</h3>
+        <div class="tech-stack">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
         </div>
-    </section>
+        <p>My personal portfolio site showcasing my skills and projects.</p>
+        <a href="https://dellportfilol.netlify.app/" class="btn">View Project</a>
+      </div>
+    </div>
 
-    <!-- Contact -->
-    <section class="contact" id="contact">
-        <h2 class="section-title">Contact Me</h2>
-        <p>Email: <a href="mailto:nnadicollins@icloud.com">nnadicollins@icloud.com</a></p>
-    </section>
+    <div class="cta-section">
+      <h3>Want to work together?</h3>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+  </section>
 
-    <script src="jave.js"></script>
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email me at: <a href="mailto:nnadicollins@icloud.com">nnadicollins@icloud.com</a></p>
+  </section>
+
+  <script>
+    const filterButtons = document.querySelectorAll('.filter-menu button');
+    const projects = document.querySelectorAll('.project-card');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.getAttribute('data-filter');
+
+        projects.forEach(project => {
+          if (filter === 'all' || project.dataset.category === filter) {
+            project.style.display = 'flex';
+          } else {
+            project.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
