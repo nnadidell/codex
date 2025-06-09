@@ -17,7 +17,7 @@
 }
 
 html {
-    font-size: 62.5%; /* 1rem = 10px */
+    font-size: 62.5%;
     overflow-x: hidden;
 }
 
@@ -31,7 +31,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 4rem; /* smaller padding for better spacing */
+    padding: 2rem 4rem;
     background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     display: flex;
@@ -73,19 +73,19 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 12rem 8% 6rem; /* Reduced padding for better spacing */
+    padding: 12rem 8% 6rem;
 }
 
 .home {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 6rem; /* reduce gap */
-    flex-wrap: wrap; /* allow wrapping on smaller screens */
+    gap: 6rem;
+    flex-wrap: wrap;
 }
 
 .home-content {
-    flex: 1 1 350px; /* flexible width */
+    flex: 1 1 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -239,7 +239,7 @@ section {
         content: "web Designer";
     }
     81%, 100% {
-        content: "Content creator ";
+        content: "Content creator";
     }
 }
 
@@ -252,10 +252,75 @@ section {
     }
 }
 
-/* Responsive design for mobile */
+/* Projects Section */
+.projects {
+    background-color: var(--second-bg-color);
+    padding: 8rem 8% 6rem;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 4rem;
+    color: var(--main-color);
+    margin-bottom: 4rem;
+    font-weight: 700;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+
+.project {
+    background: #111;
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    max-width: 600px;
+    text-align: left;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    transition: 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.project h3 {
+    font-size: 2.4rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.project p {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Contact Section */
+.contact {
+    background: var(--bg-color);
+    padding: 6rem 8%;
+    text-align: center;
+}
+
+.contact p {
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+
+.contact a {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     html {
-        font-size: 56.25%; /* 9px for smaller screens */
+        font-size: 56.25%;
     }
     .header {
         padding: 1.5rem 2rem;
@@ -293,10 +358,9 @@ section {
     }
 }
 
-/* Smaller phones */
 @media (max-width: 480px) {
     html {
-        font-size: 50%; /* 8px */
+        font-size: 50%;
     }
     .home-content h1 {
         font-size: 3rem;
